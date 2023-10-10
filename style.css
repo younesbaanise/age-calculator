@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.parent{
+    background-color: white;
+    width: 600px;
+    border-radius: 1rem 1rem 10rem .1rem;
+}
+
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    
+    gap: 2rem;
+}
+
+.child{
+    display: flex;
+    flex-direction: column;
+}
+
+.child label{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+input{
+    width: 100px;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid lightslategray;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+input::placeholder{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.send{
+    display: flex;
+    align-items: center;
+}
+
+.send hr{
+    width: 100%;
+}
+
+.sumbit{
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: #854dff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result h1{
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+}
+
+.result span{
+    color: #854dff;
+}
+
+small{
+    color: red;
+}
